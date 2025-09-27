@@ -7,7 +7,7 @@ know this yet, React might not be for you just yet._
 
 ## Getting Started
 
-First clone the repository or use the template option and place
+First clone the repository
 it within your `resources` folder
 
 ### Installation
@@ -39,6 +39,3 @@ You can do this by running the following:
 ```sh
 yarn run build
 ```
-
-This is purely not my stuff  
-credits:- https://github.com/project-error/fivem-react-boilerplate-lua
