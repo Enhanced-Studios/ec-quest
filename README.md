@@ -14,11 +14,22 @@ This resource is built with performance, stability, and customization in mind, g
 
 ---
 
+## 🎥 Preview
+
+<p align="center">
+  <a href="https://youtu.be/xMhWsDMIHQc">
+    <img src="https://img.youtube.com/vi/xMhWsDMIHQc/0.jpg" alt="Watch the preview" width="500"/>
+  </a>
+</p>
+
+---
+
 ## ✨ Features
 - Optimized for **low performance impact**
 - Easy to **configure & customize**
 - Actively **maintained & supported**
 - Plug-and-play installation
+
 
 ---
 
