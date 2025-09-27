@@ -13,7 +13,6 @@ import {
   ScrollArea,
   Text,
 } from '@mantine/core';
-import { useNuiEvent } from '../hooks/useNuiEvent';
 import { useLocales } from '../providers/LocaleProvider';
 import { fetchNui } from '../utils/fetchNui';
 
@@ -34,15 +33,12 @@ interface Quests {
 const QuestMenu: React.FC = () => {
   const theme = DEFAULT_THEME;
   const { locale } = useLocales();
-  const [Quests, setQuests] = useState<Quests[]>([]);
+  const [Quests, setQuests] = useState<Quests[] | null>(null);
   const [playerXP, setPlayerXP] = useState<number[]>([0, 0, 0]);
   const [PrimTheme, setPrimTheme] = useState<string>('grape');
 
-  useNuiEvent<any>('setQuestMenu', (data) => {
-    setQuests(data.quests);
-  });
-
   useEffect(() => {
+    if (Quests) return;
     fetchNui('setQuestMenu')
       .then((retData) => {
         setQuests(retData.quests);
@@ -69,7 +65,9 @@ const QuestMenu: React.FC = () => {
     const data = await fetchNui<{ success: boolean }>('claimReward', { id });
 
     if (data?.success) {
-      setQuests((prev) => prev.map((q) => (q.id === id ? { ...q, claimed: true } : q)));
+      setQuests((prev) =>
+        prev ? prev.map((q) => (q.id === id ? { ...q, claimed: true } : q)) : prev
+      );
     }
   };
 
@@ -94,7 +92,7 @@ const QuestMenu: React.FC = () => {
       />
       <ScrollArea mt="sm" h={230} type="never">
         <Grid>
-          {Quests.length > 0 ? (
+          {Quests && Quests.length > 0 ? (
             Quests.map(({ name, id, reward, xp, items, claimed }) => (
               <Grid.Col span={4}>
                 <Paper

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { IconCrown, IconX } from '@tabler/icons-react';
 import { ActionIcon, Center, Container, DEFAULT_THEME, Group, Paper, Text } from '@mantine/core';
-import { useNuiEvent } from '../hooks/useNuiEvent.ts';
 import { useLocales } from '../providers/LocaleProvider';
 import { fetchNui } from '../utils/fetchNui.ts';
 import Leaderboard from './Leaderboard.tsx';
@@ -16,11 +15,6 @@ const QuestContainer: React.FC = () => {
   const initialSeconds = 5 * 60 * 60 + 30 * 60; // convert to seconds
 
   const [timeLeft, setTimeLeft] = useState(initialSeconds);
-
-  useNuiEvent<any>('setRefreshTime', (data) => {
-    const initialSeconds = data.time; // convert to seconds
-    setTimeLeft(initialSeconds);
-  });
 
   function handleClose() {
     fetchNui('hide-ui');
