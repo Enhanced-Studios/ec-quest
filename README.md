@@ -4,6 +4,11 @@
   <img src="./logo.png" alt="Logo" width="200"/>
 </p>
 
+<p align="center">
+  <a href="https://discord.gg/YaAck7QkKX">
+    <img src="https://img.shields.io/badge/Join%20Our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+  </a>
+</p>
 
 This resource is built with performance, stability, and customization in mind, giving your server powerful new features right out of the box.  
 
