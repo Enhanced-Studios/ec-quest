@@ -39,6 +39,3 @@ You can do this by running the following:
 ```sh
 yarn run build
 ```
-
-This is purely not my stuff  
-credits:- https://github.com/project-error/fivem-react-boilerplate-lua
