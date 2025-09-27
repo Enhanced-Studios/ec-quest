@@ -1,0 +1,10 @@
+{
+  "ui_title_quest": "Quest Menu",
+  "ui_quest_claimed": "Completed",
+  "ui_quest_claim": "Complete",
+  "ui_quest_noQuest": "No quests available",
+  "ui_quest_noItems": "No items required",
+  "ui_leaderboard_level": "Level",
+  "ui_leaderboard_player": "Player",
+  "ui_leaderboard_xp": "XP"
+}
