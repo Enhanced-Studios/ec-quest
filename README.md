@@ -34,8 +34,10 @@ This resource is built with performance, stability, and customization in mind, g
 ---
 
 ## 📥 Installation
-1. Download or clone this repository into your `resources` folder.
+1. Download or clone from **releases** into your `resources` folder.
 2. Rename the folder (if needed) to match your resource name.
 3. Add the following line to your `server.cfg`:
    ```cfg
    ensure ec-quest
+4. Execute the `ec-quests.sql` into your DB
+5. Install the item into your inventory from /install folder
