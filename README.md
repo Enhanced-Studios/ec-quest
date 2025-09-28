@@ -10,7 +10,7 @@
   </a>
 </p>
 
-This resource is built with performance, stability, and customization in mind, giving your server powerful new features right out of the box.  
+This resource is built with performance, stability, and customization in mind, giving your server powerful new features right out of the box.
 
 ---
 
@@ -25,19 +25,30 @@ This resource is built with performance, stability, and customization in mind, g
 ---
 
 ## ✨ Features
+
 - Optimized for **low performance impact**
 - Easy to **configure & customize**
 - Actively **maintained & supported**
 - Plug-and-play installation
 
+---
+
+## ✨ Dependencies
+
+- ox_lib [Download](https://github.com/CommunityOx/ox_lib)
+- oxmysql [Download](https://github.com/CommunityOx/oxmysql)
 
 ---
 
 ## 📥 Installation
+
 1. Download or clone from **releases** into your `resources` folder.
 2. Rename the folder (if needed) to match your resource name.
 3. Add the following line to your `server.cfg`:
+
    ```cfg
    ensure ec-quest
+   ```
+
 4. Execute the `ec-quests.sql` into your DB
 5. Install the item into your inventory from /install folder

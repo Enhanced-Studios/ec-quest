@@ -1,0 +1,10 @@
+{
+  "ui_title_quest": "Missioner",
+  "ui_quest_claimed": "Fuldført",
+  "ui_quest_claim": "Fuldfør",
+  "ui_quest_noQuest": "Ingen missioner tilgængelige",
+  "ui_quest_noItems": "Ingen genstande kræves",
+  "ui_leaderboard_level": "Niveau",
+  "ui_leaderboard_player": "Spiller",
+  "ui_leaderboard_xp": "XP"
+}

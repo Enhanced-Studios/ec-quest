@@ -1,6 +1,6 @@
 Config = {}
 
-Config.PrimaryColor = 'green' -- Default if left none its grape
+Config.PrimaryColor = 'grape' -- Default if left none its grape
 Config.language = 'en' -- Default language.
 Config.UseItem = true -- Use item to open quest menu.
 Config.RefreshTime = 0.1 -- Time in hours to refresh quests. 1 = 1 hour.
